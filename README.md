@@ -16,6 +16,6 @@ Each row must sum to 1 (it must be row-stochastic). In addition, there must be a
 <br>For example, if page 1 has links to pages 2 and 3, then the column entry for page 1 would be [0.5, 0.5, 0]. If page 2 has links to pages 1, 3, and 4, then the column entry for page 2 would be [0.33, 0, 0.33, 0.33]. If page 3 has no links, then the column entry for page 3 would be [0, 0, 0, 0]. If page 4 has a link to page 1, then the column entry for page 4 would be [1, 0, 0, 0].
 <br>To interpret the results, the index of the highest value in the resulting vector is the page with the highest rank.
 
-For DiGraphs, the transition matrix is computed as follows:
+For DiGraphs, the adjacency matrix is computed as follows:
 <li>For each node, the probability of transitioning to another node is 1 / number of outgoing edges
 <li>If a node has no outgoing edges, then the probability of transitioning to another node is 1 / number of nodes (due to the damping factor)
