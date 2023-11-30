@@ -11,7 +11,7 @@ Adjust variables
 
 <br>Create the adjacency matrix M by creating a square matrix of size $n_Xn$, where n is the number of nodes (pages) in the web graph. 
 A non-zero value $i,j$ in a column entry represents the presence of an edge (link) from page $j$ to page $i$.
-Each row must sum to 1 (it must be row-stochastic). In addition, there must be all zeros on the main diagonal (a page cannot link to itself). If a row has all zeros, then the row is replaced with a row of 1/n, where n is the number of nodes (pages) in the web graph.
+Each row must sum to 1 (it must be row-stochastic). In addition, there must be all zeros on the main diagonal (a page cannot link to itself). If a row has all zeros, then the row is replaced with a row of $1/n$, where n is the number of nodes (pages) in the web graph.
 
 <br>For example, if page 1 has links to pages 2 and 3, then the column entry for page 1 would be [0.5, 0.5, 0]. If page 2 has links to pages 1, 3, and 4, then the column entry for page 2 would be [0.33, 0, 0.33, 0.33]. If page 3 has no links, then the column entry for page 3 would be [0, 0, 0, 0]. If page 4 has a link to page 1, then the column entry for page 4 would be [1, 0, 0, 0].
 <br>To interpret the results, the index of the highest value in the resulting vector is the page with the highest rank.
